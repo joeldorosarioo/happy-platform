@@ -28,8 +28,6 @@ This project was developed with the following technologies:
 - [NodeJS](https://nodejs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
-- [Expo](https://expo.io/)
 
 ## How To Use
 
@@ -73,22 +71,6 @@ $ yarn install
 
 # Start the application
 $ yarn start
-```
-
-### Install mobile dependencies
-
-To run the mobile application, you will need [Expo](https://expo.io/) installed on your phone.
-```bash
-# Go into the mobile repository
-$ cd happy-platform/mobile
-
-# Install dependencies
-$ yarn install
-
-# Start the application
-$ yarn start
-
-# After compiling, start the Expo on your mobile phone and scan the QR code
 ```
 
 ## How to contribute
