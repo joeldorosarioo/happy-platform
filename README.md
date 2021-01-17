@@ -47,7 +47,7 @@ $ git clone https://github.com/joeldorosarioo/happy-platform
 
 ```bash
 # Go into the server repository
-$ cd happy-platform/server
+$ cd happy-platform/backend
 
 # Install dependencies
 $ yarn install
