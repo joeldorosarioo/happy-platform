@@ -39,6 +39,29 @@ $ yarn husky install
 $ yarn start
 ```
 
+## Configuration of Environment Variables
+
+The project requires setting the following environment variable:
+
+`REACT_APP_MAPBOX_ACCESS_TOKEN`: This environment variable is required to access Mapbox features. Make sure you get a valid access token from Mapbox and set it to the value of this environment variable.
+
+### Configuring the Environment Variables
+
+Follow the steps below to properly configure environment variables in your development environment:
+
+1. Create an `.env` file in the root of the project.
+2. Open the `.env` file and set the necessary environment variables. In the case of this project, add the following line:
+
+```makefile
+REACT_APP_MAPBOX_ACCESS_TOKEN=<your_token>
+```
+
+Be sure to replace `<your_token>` with the actual access token provided by Mapbox.
+
+3. Save the `.env` file.
+
+> Note: The .env file is usually added to the .gitignore file to prevent environment keys from being publicly shared.
+
 ## How to contribute
 
 - Make a fork;
