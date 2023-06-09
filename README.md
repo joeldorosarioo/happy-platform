@@ -34,10 +34,6 @@ $ yarn install
 
 $ yarn husky install
 
-# Add hook
-
-$ yarn husky add .husky/commit-msg 'yarn commitlint --edit $1'
-
 # Start the Server
 
 $ yarn start
