@@ -8,7 +8,7 @@ function Landing () {
 	return (
 		<div id="page-landing">
 			<div className="content-wrapper">
-				<img src={ LogoIcon } alt="Happy" />
+				<img src={ LogoIcon } alt="Happy" className="logo" />
 
 				<main>
 					<h1>Leve felicidade para o mundo</h1>
@@ -17,7 +17,7 @@ function Landing () {
 
 				<div className="location">
 					<strong>São Paulo</strong>
-					<span>Embu das Artes</span>
+					<span>Locais Fictícios</span>
 				</div>
 
 				<Link to="/map" className="enter-app">

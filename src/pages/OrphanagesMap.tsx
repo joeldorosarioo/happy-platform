@@ -32,7 +32,7 @@ function OrphanagesMap () {
 
 				<footer>
 					<strong>São Paulo</strong>
-					<span>Embu das Artes</span>
+					<span>Locais Fictícios</span>
 				</footer>
 			</aside>
 
