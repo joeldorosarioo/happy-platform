@@ -34,7 +34,7 @@
 
 #page-map aside p {
 	margin-top: 24px;
-	line-height: 1.2;
+	line-height: 1;
 }
 
 #page-map aside footer {
@@ -124,7 +124,7 @@
 	}
 
 	#page-map aside {
-		padding: 28px 32px;
+		padding: 18px;
 		width: 100%;
 	}
 
@@ -137,7 +137,7 @@
 		margin-bottom: 8px;
 
 		font-size: 22px;
-		line-height: 1.2;
+		line-height: 1;
 	}
 
 	#page-map aside header p {
