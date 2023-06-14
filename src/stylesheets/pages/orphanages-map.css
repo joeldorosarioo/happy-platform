@@ -1,32 +1,40 @@
 #page-map {
+	position: relative;
+
 	width: 100vw;
 	height: 100vh;
-
-	position: relative;
 
 	display: flex;
 }
 
 #page-map aside {
-	width: 440px;
-	background-image: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
 	padding: 80px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	width: 520px;
+
+	text-shadow: 1px 1px 2px #3A3A3A;
+	background-image: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+#page-map aside header .logo {
+	filter: drop-shadow(1px 1px 1px #3A3A3A);
 }
 
 #page-map aside h2 {
+	margin-top: 64px;
+
 	font-size: 40px;
 	font-weight: 800;
 	line-height: 42px;
-	margin-top: 64px;
 }
 
 #page-map aside p {
-	line-height: 28px;
 	margin-top: 24px;
+	line-height: 1.2;
 }
 
 #page-map aside footer {
@@ -46,21 +54,20 @@
 
 #page-map .create-orphanage {
 	position: absolute;
-	right: 40px;
-	bottom: 40px;
-
+	right: 40px; bottom: 40px;
 	z-index: 10;
+
+	border-radius: 20px;
+	box-shadow: 1px 1px 2px 0 #4D4D4D;
 
 	width: 64px;
 	height: 64px;
-
-	background-color: #15C3D6;
-	border-radius: 20px;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
+	background-color: #15C3D6;
 	transition: background-color .2s;
 }
 
@@ -69,33 +76,38 @@
 }
 
 #page-map .map-popup .leaflet-popup-content-wrapper {
-	background-color: rgba(255, 255, 255, .8);
 	border-radius: 20px;
 	box-shadow: none;
+
+	background-color: rgba(255, 255, 255, .8);
 }
 
 #page-map .map-popup .leaflet-popup-content {
-	color: #0089A5;
-	font-size: 17px;
-	font-weight: bold;
 	margin: 6px 10px;
-	font-family: 'Nunito', sans-serif;
 
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
+
+	color: #0089A5;
+
+	font-size: 17px;
+	font-weight: bold;
+	font-family: 'Nunito', sans-serif;
 }
 
 #page-map .map-popup .leaflet-popup-content a {
-	width: 40px;
-	height: 40px;
-	background-color: #15C3D6;
-	box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16);
 	border-radius: 12px;
+	box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, .16);
 
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+
+	width: 40px;
+	height: 40px;
+
+	background-color: #15C3D6;
 }
 
 #page-map .map-popup .leaflet-popup-content a:hover {
@@ -104,4 +116,35 @@
 
 #page-map .map-popup .leaflet-popup-tip-container {
 	display: none;
+}
+
+@media (max-width: 1199.98px) {
+	#page-map {
+		flex-direction: column;
+	}
+
+	#page-map aside {
+		padding: 28px 32px;
+		width: 100%;
+	}
+
+	#page-map aside header .logo {
+		display: none;
+	}
+
+	#page-map aside header h2 {
+		margin-top: 0;
+		margin-bottom: 8px;
+
+		font-size: 22px;
+		line-height: 1.2;
+	}
+
+	#page-map aside header p {
+		margin-top: 0;
+	}
+
+	#page-map aside footer {
+		display: none;
+	}
 }
