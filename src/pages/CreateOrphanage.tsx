@@ -1,4 +1,4 @@
-import { FormEvent, useState, ChangeEvent } from 'react';
+import { FormEvent, useState, useEffect, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LeafletMouseEvent } from 'leaflet';
 import { MapContainer, Marker, TileLayer, useMapEvents } from 'react-leaflet';
@@ -50,6 +50,25 @@ export default function CreateOrphanage () {
 
 		setPreviewImages(selectedImagesPreview);
 	}
+
+	const [disabledButton, setDisabledButton] = useState(true);
+
+	useEffect(() => {
+		const fields = [name, about, position, instructions, opening_hours];
+
+		const areFieldsEmpty = fields.some(field => {
+			if (typeof field === 'string') {
+				return !field.trim();
+			} else if (typeof field === 'object' && field !== null) {
+				return Object.values(field).every(value => !value);
+			}
+			return !field;
+		});
+
+		setDisabledButton(areFieldsEmpty);
+		console.log(areFieldsEmpty);
+
+	}, [name, about, position, instructions, opening_hours]);
 
 	async function handleSubmit (event: FormEvent) {
 		event.preventDefault();
@@ -172,7 +191,7 @@ export default function CreateOrphanage () {
 						</div>
 					</fieldset>
 
-					<button type="submit" className="confirm-button">
+					<button type="submit" className="confirm-button" disabled={ disabledButton }>
 						Confirmar
 					</button>
 				</form>

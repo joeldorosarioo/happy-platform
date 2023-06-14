@@ -195,6 +195,15 @@ form.create-orphanage-form button.confirm-button:hover {
 	background-color: #36CF82;
 }
 
+form.create-orphanage-form button.confirm-button:disabled {
+	background-color: rgba(220, 60, 60, .5);
+	cursor: not-allowed;
+}
+
+form.create-orphanage-form button.confirm-button:disabled:hover {
+	background-color: rgba(220, 60, 60, .5);
+}
+
 @media (max-width: 1199.98px) {
 	#page-create-orphanage main {
 		margin-left: 0;
