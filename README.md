@@ -15,6 +15,8 @@ This project was developed with the following technologies:
 
 ## How To Use
 
+> This project depends on [happy-platform-server](https://github.com/joeldorosarioo/happy-platform-server) to work correctly.
+
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org) installed on your computer.
 
 From your command line:
